@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Reset = () => {
   return (
@@ -7,7 +7,7 @@ const Reset = () => {
         <h1>Reset password section</h1>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Reset
+export default Reset;

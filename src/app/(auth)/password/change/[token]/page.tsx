@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Change = () => {
   return (
@@ -8,6 +8,6 @@ const Change = () => {
       </div>
     </main>
   );
-}
+};
 
-export default Change
+export default Change;

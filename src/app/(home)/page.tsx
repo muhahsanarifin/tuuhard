@@ -5,16 +5,17 @@ import Search from "@/components/Search";
 import * as Pagination from "@/components/Pagination";
 import Products from "@/components/Products";
 import * as Sorter from "@/components/Sorter";
+import Cart from "@/components/Cart";
 
 export default function Home() {
   return (
-    <main className="border-2 border-solid border-green-500 flex min-h-screen">
+    <main className="flex min-h-screen">
       <section className="bg-[#292c4b] py-[1.5rem] pr-[1.5rem]">
         <SiderBar />
       </section>
-      <section className="border-2 border-solid border-pink-500 flex-1">
-        <div className="border-2 border-solid border-yellow-500 h-full flex">
-          <div className="border-2 border-solid border-blue-500 bg-[#f5f6f8] flex-1 flex flex-col p-4">
+      <section className="flex-1">
+        <div className="h-full flex">
+          <div className="bg-[#f5f6f8] flex-1 flex flex-col p-4">
             <div className="h-[8%] flex">
               <Search />
             </div>
@@ -31,8 +32,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="border-2 border-solid border-purple-500 basis-1/4">
-            <h1>Cart section</h1>
+          <div className="basis-1/4 h-full">
+            <Cart/>
           </div>
         </div>
       </section>

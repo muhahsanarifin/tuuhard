@@ -6,6 +6,6 @@ const Register = () => {
       </div>
     </main>
   );
-}
+};
 
-export default Register
+export default Register;
