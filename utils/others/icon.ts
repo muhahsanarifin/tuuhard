@@ -56,3 +56,27 @@ export const sorter = {
   width: 24,
   height: 24,
 };
+
+export const cart = {
+  close: {
+    fitur: "Close",
+    icon: "formkit:close",
+    color: "#b64d5f",
+    width: 24,
+    height: 24,
+  },
+  minus: {
+    fitur: "Minus",
+    icon: "ic:round-minus",
+    color: "#3f84c9",
+    width: 24,
+    height: 24,
+  },
+  plus: {
+    fitur: "Plus",
+    icon: "ic:round-plus",
+    color: "#3f84c9",
+    width: 24,
+    height: 24,
+  },
+};
