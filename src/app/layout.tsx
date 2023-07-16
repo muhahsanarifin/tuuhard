@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../styles/globals.css";
 import { Poppins, Lato } from "next/font/google";
 
 // Default font
@@ -22,8 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className} ${lato.variable}`}>{children}</body>
+    <html lang="en" data-theme="light">
+      <body className={`${poppins.className} ${lato.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
