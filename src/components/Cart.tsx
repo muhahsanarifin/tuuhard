@@ -3,7 +3,7 @@
 import React from "react";
 
 import { Icon } from "@iconify/react";
-import * as icon from "../../utils/others/icon";
+import * as icon from "../utils/others/icon";
 import Image from "next/image";
 import * as Button from "../components/Button";
 
@@ -43,7 +43,7 @@ const Cart: React.FC<{}> = () => {
                 <p className="text-sm text-[#45474c]">Fruit</p>
                 <p className="font-semibold">$100</p>
               </div>
-              <div className="flex items-center basis-1/4 border-2">
+              <div className="flex items-center basis-1/4">
                 <ul className="flex-1 flex justify-center items-center gap-x-1">
                   <li className="bg-[#e8f4ff] w-[24px] h-[24px] rounded-full text-center">
                     -

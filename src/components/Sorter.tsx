@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import * as icon from "../../utils/others/icon";
+import * as icon from "../utils/others/icon";
 import { Icon } from "@iconify/react";
 
 export const SortingBtn: React.FC<{}> = () => {

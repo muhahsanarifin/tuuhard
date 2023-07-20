@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import * as type from "../../utils/types/buttonType";
+import * as type from "../utils/types/buttonType";
 
 export const Cart: React.FC<type.CartButtonProps> = ({
   title,

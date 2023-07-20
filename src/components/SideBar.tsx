@@ -1,9 +1,11 @@
 "use client";
 
 import { Icon } from "@iconify/react";
-import * as icon from "../../utils/others/icon";
+import * as icon from "../utils/others/icon";
+import { useRouter } from "next/navigation";
 
 const SiderBar: React.FC<{}> = () => {
+  const router = useRouter();
 
   return (
     <>
@@ -14,6 +16,10 @@ const SiderBar: React.FC<{}> = () => {
               idx === 0 && "bg-[#ffffff]"
             }`}
             key={idx}
+            onClick={() => {
+              router.push(`/${el.fitur.toLocaleLowerCase()}`);
+              console.log(el.fitur.toLocaleLowerCase());
+            }}
           >
             <Icon
               icon={el.icon}
