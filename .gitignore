@@ -33,3 +33,28 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# README
+README.md
+
+# Source
+src/app/globals.css
+
+# Tailwind
+tailwind.config.js
+
+# Next Config
+next.config.js
+
+# Postcss
+postcss.config.js
+
+# Public
+public
+
+# Utils
+utils/managing_state
+
+# Manage state
+src/utils/state/redux
+src/utils/state/zustand
