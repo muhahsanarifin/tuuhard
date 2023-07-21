@@ -11,7 +11,11 @@ export default function Home() {
   return (
     <main className="flex min-h-screen">
       <section className="bg-[#292c4b] py-[1.5rem] pr-[1.5rem]">
-        <SiderBar />
+        <SiderBar
+          onClass="bg-[#ffffff]"
+          onClassFitur="text-[#3589e0]"
+          activeBtn="home"
+        />
       </section>
       <section className="flex-1">
         <div className="h-full flex">
@@ -33,7 +37,7 @@ export default function Home() {
             </div>
           </div>
           <div className="basis-1/4 h-full">
-            <Cart/>
+            <Cart />
           </div>
         </div>
       </section>
