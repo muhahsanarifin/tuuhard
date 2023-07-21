@@ -5,7 +5,12 @@ import React from "react";
 export const Button: React.FC<{}> = () => {
   return (
     <>
-      <h1>Button pagination component</h1>
+      <div className="join grid grid-cols-2">
+        <button className="join-item btn btn-sm btn-outline">
+          Previous page
+        </button>
+        <button className="join-item btn btn-sm btn-outline">Next</button>
+      </div>
     </>
   );
 };
