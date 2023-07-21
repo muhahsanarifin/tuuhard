@@ -53,8 +53,5 @@ postcss.config.js
 public
 
 # Utils
-utils/managing_state
-
-# Manage state
 src/utils/state/redux
 src/utils/state/zustand
