@@ -8,10 +8,10 @@ import * as Pagination from "@/components/Pagination";
 const Transaction = () => {
   return (
     <main className="flex min-h-screen">
-      <section className="bg-[#292c4b] py-[1.5rem] pr-[1.5rem]">
+      <section className="bg-sidebar-bg-color py-[1.5rem] pr-[1.5rem]">
         <SiderBar
-          onClass="bg-[#ffffff]"
-          onClassFitur="text-[#3589e0]"
+          onClass="bg-aft-bg"
+          onClassFitur="text-aft-c"
           activeBtn="transaction"
         />
       </section>
