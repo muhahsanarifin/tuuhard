@@ -2,31 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  :root {
+    --primary-bg: #ffffff;
+
+    --sidebar-bg-color: #292c4b;
+
+    --navbar-bg-color: #2f80ec;
+
+    /* aft = active fitur text */
+    --aft-c: #3589e0;
+    --aft-bg: #ffffff;
+
+    /* disable fitur text */
+    --dft-c: #afdaf9;
+
+    /* active fitur icon */
+    --afi: #2882d7;
+
+    /* disable fitur icon */
+    --dfi: #afdaf9;
+
+    --sorter-bg: #ffffff;
+
+    --pagination-search-product-bg: #f5f6f8;
+
+    /* sb = search button */
+    --sb-bg: #ffffff;
+
+    --primary-cart-bg: #ffffff;
+
+    --secondary-cart-bg: #ffe9ef;
+
+    /* tcp = total checkout pending */
+    --tcp-bg: #fefeff;
+
+    /* pic = products in cart */
+    --pic-bg: #ffffff;
+
+    /* bc = button cart */
+    --bc-c : #e3ffff;
+
+    /* pi = product image */
+    /* --pi-bg: #ffffff; */
+
+    --product-view-bg: #ffffff;
+
+    /* bf = bold font */
+    --bf-c: #343940;
+
+    /* rf = reguler font */
+    --rf-c: #343940;
+
+    --icon-bg: #e8f4ff;
+
+    --btn-bg: #63a0f1;
+
+    /* text inside sorter */
+    --tis-c: #34658d;
+
+    --primary-border-c: #e5e7eb;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Dark mode */
+[data-mode="dark"] {
+  --primary-bg: #1d232a;
+
+  --sidebar-bg-color: #1d232a;
+
+  --navbar-bg-color: #2a323c;
+
+  --sorter-bg: #2a323c;
+
+  --pagination-search-product-bg: #1d232a;
+
+  --sb-bg: #2a323c;
+
+  --primary-cart-bg: #1d232a;
+
+  --secondary-cart-bg: #2a323c;
+
+  --tcp-bg: #2a323c;
+
+  --pic-bg: #2a323c;
+
+  /* --pi-bg: #2a323c; */
+
+  --product-view-bg: #2a323c;
+
+  --bf-c: #a6adba;
+
+  --rf-c: #8a919d;
+
+  --icon-bg: #1d232a;
+
+  --btn-bg: #1d232a;
+
+  --tis-c: #a6adba;
+
+  --primary-border-c: #1d232a;
+
+  --aft-c: #a6adba;
+
+  --aft-bg: #1d232a;
+
+  --dft-c: #8a919d;
+
+  --afi: #a6adba;
+
+  --dfi: #8a919d;
+
+  --bc-c: #a6adba;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+  background: var(--primary-bg);
+}
 
 /* ros = remove overflow scrollbar */
 .ros::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
