@@ -14,10 +14,10 @@ const SiderBar: React.FC<type.SideBarProps> = ({
 
   return (
     <>
-      <ul className="h-full bg-[#2f80ec] rounded-r-3xl flex flex-col items-center w-28">
+      <ul className="h-full bg-navbar-bg-color rounded-r-3xl flex flex-col items-center w-28">
         {icon.sideBar.map((el, idx) => (
           <li
-            className={`my-auto rotate-[-90deg] w-fit cursor-pointer flex justify-center items-center gap-x-2 p-4 rounded-lg hover:bg-[#ffffff] ${
+            className={`my-auto rotate-[-90deg] w-fit cursor-pointer flex justify-center items-center gap-x-2 p-4 rounded-lg hover:bg-aft-bg ${
               el.fitur.toLocaleLowerCase() === activeBtn && onClass
             }`}
             key={idx}
@@ -30,20 +30,20 @@ const SiderBar: React.FC<type.SideBarProps> = ({
           >
             <Icon
               icon={el.icon}
-              color={
-                el.fitur.toLocaleLowerCase() === activeBtn
-                  ? el.color.active
-                  : el.color.disable
-              }
               width={el.widh}
               height={el.height}
               hFlip={el.horizontal_flip}
+              className={
+                el.fitur.toLocaleLowerCase() === activeBtn
+                  ? `text-afi`
+                  : `text-dfi`
+              }
             />
             <p
               className={`${
                 el.fitur.toLocaleLowerCase() === activeBtn
                   ? onClassFitur
-                  : "text-[#afdaf9]"
+                  : "text-dft-c"
               }`}
             >
               {el.fitur}

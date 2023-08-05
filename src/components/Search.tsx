@@ -6,11 +6,8 @@ import { Icon } from "@iconify/react";
 const Search: React.FC<{}> = () => {
   return (
     <>
-      <span className="flex-1 flex gap-x-1 m-1 p-1 rounded-lg bg-[#ffffff]">
-        <label
-          htmlFor="search"
-          className="flex items-center"
-        >
+      <span className="flex-1 flex gap-x-1 m-1 p-1 rounded-lg bg-sb-bg">
+        <label htmlFor="search" className="flex items-center">
           <Icon
             icon="fluent:search-16-regular"
             color="#c1c6ca"
@@ -22,7 +19,7 @@ const Search: React.FC<{}> = () => {
           type="search"
           name=""
           id="search"
-          className="flex-1 text-[#c1c6ca] focus:outline-none"
+          className="flex-1 text-bf-c focus:outline-none bg-sb-bg"
         />
       </span>
     </>
