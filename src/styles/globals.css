@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* c = color, bg = background */
+
 @layer base {
   :root {
     --primary-bg: #ffffff;
@@ -18,10 +20,10 @@
     --dft-c: #afdaf9;
 
     /* active fitur icon */
-    --afi: #2882d7;
+    --afi-c: #2882d7;
 
     /* disable fitur icon */
-    --dfi: #afdaf9;
+    --dfi-c: #afdaf9;
 
     --sorter-bg: #ffffff;
 
@@ -71,7 +73,7 @@
     */
     --select-bg: #ffffff;
     --hs-bg: #f9fafb;
-    --as: #f9fafb;
+    --as-c: #f9fafb;
   }
 }
 
@@ -122,15 +124,15 @@
 
   --dft-c: #8a919d;
 
-  --afi: #a6adba;
+  --afi-c: #a6adba;
 
-  --dfi: #8a919d;
+  --dfi-c: #8a919d;
 
   --bc-c: #a6adba;
 
   --select-bg: #2a323c;
   --hs-bg: #1d232a;
-  --as: #1d232a;
+  --as-c: #1d232a;
 }
 
 body {
