@@ -13,7 +13,6 @@ module.exports = {
         "navbar-bg-color": "var(--navbar-bg-color)",
         "sorter-bg": "var(--sorter-bg)",
         "pagination-search-product-bg": "var(--pagination-search-product-bg)",
-        "transaction-bg": "var(--transaction-bg)",
         "primary-cart-bg": "var(--primary-cart-bg)",
         "secondary-cart-bg": "var(--secondary-cart-bg)",
         "tcp-bg": "var(--tcp-bg)",
@@ -36,6 +35,11 @@ module.exports = {
         "select-bg": "var(--select-bg)",
         "hs-bg": "var(--hs-bg)",
         "as-c": "var(--as-c)",
+        "nb-bg": "var(--nb-bg)",
+        "pb-bg": "var(--pb-bg)",
+        "secondary-bg": "var(--secondary-bg)",
+        "l-c": "var(--l-c)",
+        "l-bg": "var(--l-bg)",
       },
       fontFamily: {
         lato: ["var(--font-lato)"],
@@ -64,7 +68,12 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require("@tailwindcss/forms")({
+      strategy: "className",
+    }),
+  ],
   daisyui: {
     // Don't want to include any themes and disable all colors
     themes: [],
