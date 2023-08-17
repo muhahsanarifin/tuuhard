@@ -3,13 +3,59 @@
 import React from "react";
 
 export const Button: React.FC<{}> = () => {
+  const handlePreviousPage = () => {
+    console.log("Test previous page!");
+  };
+
+  const handleNextPage = () => {
+    console.log("Test next page!");
+  };
+
   return (
     <>
-      <div className="join grid grid-cols-2">
-        <button className="join-item btn btn-sm btn-outline">
-          Previous page
+      <div className="inline-flex items-center justify-center gap-3">
+        <button
+          className="inline-flex h-8 w-8 items-center justify-center rounded border border-primary-border-c bg-pb-bg text-gray-900 rtl:rotate-180"
+          onClick={handlePreviousPage}
+        >
+          <span className="sr-only">Next Page</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-3 w-3"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+              clipRule="evenodd"
+            />
+          </svg>
         </button>
-        <button className="join-item btn btn-sm btn-outline">Next</button>
+
+        <p className="text-xs text-bf-c font-semibold">
+          3<span className="mx-0.25">/</span>
+          12
+        </p>
+
+        <button
+          className="inline-flex h-8 w-8 items-center justify-center rounded border border-primary-border-c bg-nb-bg text-gray-900 rtl:rotate-180"
+          onClick={handleNextPage}
+        >
+          <span className="sr-only">Next Page</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-3 w-3"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
       </div>
     </>
   );
@@ -29,11 +75,6 @@ export const Meta: React.FC<{}> = () => {
             ></li>
           ))}
         </ul>
-        <div className="ml-auto flex items-center">
-          <p className="text-xs text-[#828891]">
-            <span>8 </span>of<span> 40</span>
-          </p>
-        </div>
       </div>
     </>
   );
